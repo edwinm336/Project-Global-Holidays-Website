@@ -1,0 +1,56 @@
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+   }
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+   }
+   body{
+    background-color: #ffd700;
+   }
+   .row.content {height: 450px}
+    
+ .card:hover{
+  transform: scale(1.1);
+ }
+ .card{
+  transition: transform .5s;
+ }
+ .peffect:hover{
+  transform: scale(1.1);
+ }
+ .peffect{
+  transition: transform .5s;
+  border-radius: 25px;
+  background-color: #0047AB;
+ }
+ h1,h2{
+  font-family:Jazz LET;
+ }
+ #lm{
+  height:300px;
+  width:300px;
+}
